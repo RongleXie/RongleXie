@@ -1,0 +1,81 @@
+name: Update README Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-stats.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Fetch GitHub Stats
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          USER_DATA=$(curl -s -H "Authorization: token $GH_TOKEN" \
+            "https://api.github.com/users/RongleXie")
+
+          REPOS=$(echo "$USER_DATA" | jq -r '.public_repos')
+          FOLLOWERS=$(echo "$USER_DATA" | jq -r '.followers')
+
+          STARS=$(curl -s -H "Authorization: token $GH_TOKEN" \
+            "https://api.github.com/users/RongleXie/repos?per_page=100&type=owner" | \
+            jq '[.[].stargazers_count] | add')
+
+          if [ "$STARS" -ge 1000 ]; then
+            STARS_FORMATTED=$(echo "scale=1; $STARS / 1000" | bc | sed 's/\.0$//')k+
+          else
+            STARS_FORMATTED="${STARS}+"
+          fi
+
+          echo "REPOS=$REPOS" >> $GITHUB_ENV
+          echo "FOLLOWERS=$FOLLOWERS" >> $GITHUB_ENV
+          echo "STARS_FORMATTED=$STARS_FORMATTED" >> $GITHUB_ENV
+
+          echo "::notice::Stars: $STARS_FORMATTED, Repos: $REPOS, Followers: $FOLLOWERS"
+
+      - name: Update README.md
+        run: |
+          sed -i -E "s/\|\s*\*\*[0-9.]+k?\+?\*\*\s*\|\s*\*\*[0-9]+\*\*\s*\|\s*\*\*[0-9]+\*\*\s*\|\s*\*\*[0-9]+\+?\*\*\s*\|/| **${{ env.STARS_FORMATTED }}** | **${{ env.REPOS }}** | **${{ env.FOLLOWERS }}** | **800+** |/" README.md
+          sed -i -E "s/badge\/Repos-[0-9]+-blue/badge\/Repos-${{ env.REPOS }}-blue/" README.md
+
+          echo "::group::README Changes"
+          git diff README.md || echo "No changes made"
+          echo "::endgroup::"
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+
+          if git diff --staged --quiet; then
+            echo "::notice::No changes to commit"
+          else
+            git commit -m "chore: auto-update stats"
+            git push
+            echo "::notice::Successfully updated README stats"
+          fi
+
+      - name: Health Check Stats API
+        run: |
+          STATS_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "https://github-readme-stats-ronglexie.vercel.app/api?username=RongleXie")
+
+          if [ "$STATS_STATUS" = "200" ]; then
+            echo "::notice::Stats API is healthy"
+          else
+            echo "::warning::Stats API returned status $STATS_STATUS"
+          fi
