@@ -187,6 +187,26 @@
 
 ---
 
+### :card_file_box: Profile Details
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RongleXie&theme=tokyonight" alt="Profile Details"/>
+</div>
+
+---
+
+### :earth_americas: 3D Contribution Graph
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-night-rainbow.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-gitblocks.svg" />
+    <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-night-rainbow.svg" />
+  </picture>
+</div>
+
+---
+
 <div align="center">
   <i>:star: If you like my projects, feel free to give them a star!</i>
 </div>
