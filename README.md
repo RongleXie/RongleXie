@@ -190,7 +190,7 @@
 ### :card_file_box: Profile Details
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RongleXie&theme=tokyonight" alt="Profile Details"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RongleXie&theme=tokyonight" width="100%" alt="Profile Details"/>
 </div>
 
 ---
