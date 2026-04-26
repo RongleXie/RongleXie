@@ -2,7 +2,7 @@ name: Update 3D Contribution Graph
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 permissions:
@@ -15,26 +15,33 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
+      - name: Write settings.json
+        run: |
+          mkdir -p profile-3d-contrib
+          cat > profile-3d-contrib/settings.json << 'EOL'
+          {
+            "type": "rainbow",
+            "backgroundColor": "#0D1117",
+            "foregroundColor": "#A5B4FC",
+            "strongColor": "#FFFFFF",
+            "weakColor": "#64748B",
+            "radarColor": "#3B82F6",
+            "growingAnimation": true,
+            "contribColors": [
+              "#161B22",
+              "#1E3A8A",
+              "#2563EB",
+              "#3B82F6",
+              "#06B6D4"
+            ]
+          }
+          EOL
+
       - name: Generate profile-3d-contrib
-        uses: yoshi389111/github-profile-3d-contrib@latest
+        uses: yoshi389111/github-profile-3d-contrib@0.7.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-        with:
-          settings: |
-            {
-              "type": "rainbow",
-              "backgroundColor": "#0D1117",
-              "radarColor": "#3B82F6",
-              "growingAnimation": true,
-              "contribColors": [
-                "#161B22",
-                "#1E3A8A",
-                "#2563EB",
-                "#3B82F6",
-                "#06B6D4"
-              ]
-            }
 
       - name: Commit & Push
         run: |
