@@ -24,7 +24,11 @@
 ---
 
 <!-- Skills & Tools -->
-### :hammer_and_wrench: Skills & Tools
+<h2 align="center">
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+  Skills & Tools
+  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+</h2>
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=java,typescript,python,go,js,vue,react,nodejs,spring,kafka,rabbitmq,mysql,redis,docker,kubernetes,git,linux,idea,maven,tailwindcss,aws,pytorch,flutter,nginx,jenkins,postgres,mongodb&perline=9" />
@@ -33,7 +37,11 @@
 ---
 
 <!-- Contribution Stats -->
-### :bar_chart: Contribution Stats
+<h2 align="center">
+  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+  Contribution Stats
+  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+</h2>
 
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=RongleXie&theme=tokyonight" width="32%" />
@@ -47,45 +55,57 @@
 
 ---
 
-### :pushpin: Featured Projects
+<h2 align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="28px" width="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+  Featured Projects
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="28px" width="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+</h2>
 
 <div align="center">
   <a href="https://github.com/RongleXie/java-books-collections">
-    <img width="49%" src="https://github-readme-stats-ronglexie.vercel.app/api/pin/?username=RongleXie&repo=java-books-collections&theme=radical" />
+    <img width="49%" src="https://github-readme-stats-ronglexie.vercel.app/api/pin/?username=RongleXie&repo=java-books-collections&theme=tokyonight&title_color=3B82F6&icon_color=06B6D4&text_color=ffffff&bg_color=0D1117&border_color=1E3A8A" />
   </a>
   <a href="https://github.com/RongleXie/Play-with-Data-Structures-Ronglexie">
-    <img width="49%" src="https://github-readme-stats-ronglexie.vercel.app/api/pin/?username=RongleXie&repo=Play-with-Data-Structures-Ronglexie&theme=radical" />
+    <img width="49%" src="https://github-readme-stats-ronglexie.vercel.app/api/pin/?username=RongleXie&repo=Play-with-Data-Structures-Ronglexie&theme=tokyonight&title_color=3B82F6&icon_color=06B6D4&text_color=ffffff&bg_color=0D1117&border_color=1E3A8A" />
   </a>
 </div>
 
 <div align="center">
   <a href="https://github.com/RongleXie/mmall">
-    <img width="49%" src="https://github-readme-stats-ronglexie.vercel.app/api/pin/?username=RongleXie&repo=mmall&theme=radical" />
+    <img width="49%" src="https://github-readme-stats-ronglexie.vercel.app/api/pin/?username=RongleXie&repo=mmall&theme=tokyonight&title_color=3B82F6&icon_color=06B6D4&text_color=ffffff&bg_color=0D1117&border_color=1E3A8A" />
   </a>
   <a href="https://github.com/RongleXie/concurrency">
-    <img width="49%" src="https://github-readme-stats-ronglexie.vercel.app/api/pin/?username=RongleXie&repo=concurrency&theme=radical" />
+    <img width="49%" src="https://github-readme-stats-ronglexie.vercel.app/api/pin/?username=RongleXie&repo=concurrency&theme=tokyonight&title_color=3B82F6&icon_color=06B6D4&text_color=ffffff&bg_color=0D1117&border_color=1E3A8A" />
   </a>
 </div>
 
 ---
 
-### :snake: Contribution Snake
+<h2 align="center">
+  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+  Contribution Snake
+  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+</h2>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/output/github-contribution-grid-snake.svg" alt="Snake animation"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/RongleXie/RongleXie/output/github-contribution-grid-snake-dark.svg" width="100%">
+</picture>
 </div>
 
 ---
 
-### :card_file_box: Profile Details
+<h2 align="center">
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="28px" width="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+  GitHub Activity
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="28px" width="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
+</h2>
 
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RongleXie&theme=tokyonight" width="100%" alt="Profile Details"/>
 </div>
-
----
-
-### :earth_americas: 3D Contribution Graph
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph" />
@@ -96,3 +116,5 @@
 <div align="center">
   <i>:star: If you like my projects, feel free to give them a star!</i>
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1E3A8A,100:06B6D4&height=120&section=footer&animation=twinkling" width="100%"/>
