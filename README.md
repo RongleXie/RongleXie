@@ -81,11 +81,15 @@
 
 ---
 
-### :earth_americas: GitHub Activity
+### :card_file_box: Profile Details
 
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RongleXie&theme=tokyonight" width="100%" alt="Profile Details"/>
 </div>
+
+---
+
+### :earth_americas: 3D Contribution Graph
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Graph" />
