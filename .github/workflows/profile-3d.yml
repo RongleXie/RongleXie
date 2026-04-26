@@ -20,11 +20,26 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+        with:
+          settings: |
+            {
+              "type": "rainbow",
+              "backgroundColor": "#0D1117",
+              "radarColor": "#3B82F6",
+              "growingAnimation": true,
+              "contribColors": [
+                "#161B22",
+                "#1E3A8A",
+                "#2563EB",
+                "#3B82F6",
+                "#06B6D4"
+              ]
+            }
 
       - name: Commit & Push
         run: |
           git config --global user.email "ronglexie@gmail.com"
           git config --global user.name "RongleXie"
           git add -f profile-3d-contrib/
-          git commit -m "chore: update 3d contribution graph"
+          git commit -m "chore: update 3d contribution graph" || echo "No changes"
           git push
