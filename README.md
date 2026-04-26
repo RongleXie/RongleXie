@@ -88,7 +88,11 @@
 ### :earth_americas: 3D Contribution Graph
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-night-rainbow.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-gitblock.svg" />
+    <img alt="3D Contribution Graph" src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/profile-3d-contrib/profile-night-rainbow.svg" />
+  </picture>
 </div>
 
 ---
