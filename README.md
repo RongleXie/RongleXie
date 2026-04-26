@@ -14,7 +14,7 @@
   <br/><br/>
   
   <!-- Stats Badges -->
-  <img src="https://img.shields.io/badge/⭐_Stars-6.8k+-3B82F6?style=for-the-badge"/>
+  <img src="https://img.shields.io/github/stars/RongleXie?affiliations=OWNER&style=for-the-badge&color=3B82F6&labelColor=0D1117"/>
   <img src="https://img.shields.io/badge/📦_Repos-113-0D1117?style=for-the-badge&logo=github"/>
   <img src="https://img.shields.io/badge/👥_Followers-254-1E3A8A?style=for-the-badge"/>
   <img src="https://img.shields.io/badge/💻_Commits-825+-06B6D4?style=for-the-badge&logo=git"/>
