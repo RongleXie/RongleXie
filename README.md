@@ -27,7 +27,7 @@
 ### :hammer_and_wrench: Skills & Tools
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=java,typescript,python,go,js,vue,react,nodejs,spring,mysql,redis,postgres,mongodb,docker,kubernetes,git,linux,idea,vscode&perline=9" />
+  <img src="https://skillicons.dev/icons?i=java,typescript,python,go,js,vue,react,nodejs,spring,mysql,redis,docker,kubernetes,git,linux,idea,mongodb,postgres&perline=9" />
 </div>
 
 ---
