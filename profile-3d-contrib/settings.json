@@ -1,13 +1,13 @@
 {
-  "type": "custom",
-  "backgroundColor": "#0D1117",
+  "type": "rainbow",
+  "backgroundColor": "#0d1117",
   "foregroundColor": "#A5B4FC",
   "strongColor": "#FFFFFF",
   "weakColor": "#64748B",
   "radarColor": "#3B82F6",
   "growingAnimation": true,
   "contribColors": [
-    "#161B22",
+    "#161b22",
     "#1E3A8A",
     "#2563EB",
     "#3B82F6",
