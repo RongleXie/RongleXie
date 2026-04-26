@@ -34,10 +34,10 @@
 ### :sparkles: Highlights
 
 <div align="center">
-  <img src="https://img.shields.io/badge/⭐_Stars-6.8k+-FFD700?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/📦_Repos-113-007EC6?style=for-the-badge&logo=github&logoColor=white"/>
-  <img src="https://img.shields.io/badge/👥_Followers-254-239120?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/💻_Commits-825+-E4682D?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/⭐_Stars-6.8k+-FFD700?style=flat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/📦_Repos-113-007EC6?style=flat&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/👥_Followers-254-239120?style=flat&logoColor=white"/>
+  <img src="https://img.shields.io/badge/💻_Commits-825+-E4682D?style=flat&logo=git&logoColor=white"/>
 </div>
 
 ---
