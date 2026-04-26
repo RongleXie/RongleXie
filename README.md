@@ -24,11 +24,7 @@
 ---
 
 <!-- Skills & Tools -->
-<h2 align="center">
-  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  Skills & Tools
-  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-</h2>
+### :hammer_and_wrench: Skills & Tools
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=java,typescript,python,go,js,vue,react,nodejs,spring,kafka,rabbitmq,mysql,redis,docker,kubernetes,git,linux,idea,maven,tailwindcss,aws,pytorch,flutter,nginx,jenkins,postgres,mongodb&perline=9" />
@@ -37,11 +33,7 @@
 ---
 
 <!-- Contribution Stats -->
-<h2 align="center">
-  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  Contribution Stats
-  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-</h2>
+### :bar_chart: Contribution Stats
 
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=RongleXie&theme=tokyonight" width="32%" />
@@ -55,11 +47,7 @@
 
 ---
 
-<h2 align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="28px" width="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  Featured Projects
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="28px" width="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-</h2>
+### :pushpin: Featured Projects
 
 <div align="center">
   <a href="https://github.com/RongleXie/java-books-collections">
@@ -81,11 +69,7 @@
 
 ---
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  Contribution Snake
-  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="28px" height="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-</h2>
+### :snake: Contribution Snake
 
 <div align="center">
 <picture>
@@ -97,11 +81,7 @@
 
 ---
 
-<h2 align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="28px" width="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  GitHub Activity
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="28px" width="28px" style="vertical-align: middle; position: relative; top: -2px;"/>
-</h2>
+### :earth_americas: GitHub Activity
 
 <div align="center">
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=RongleXie&theme=tokyonight" width="100%" alt="Profile Details"/>
