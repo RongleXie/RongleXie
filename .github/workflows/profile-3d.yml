@@ -43,6 +43,41 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
+      - name: Apply Tech Blue Theme
+        run: |
+          # Fix background colors
+          find profile-3d-contrib -name "*.svg" -type f -exec sed -i 's/fill="#ffffff"/fill="#0d1117"/g' {} \;
+          find profile-3d-contrib -name "*.svg" -type f -exec sed -i 's/fill="#00000f"/fill="#0d1117"/g' {} \;
+          
+          # Tech Blue rainbow animation colors (from dark gray → deep blue → cyan)
+          # Replace the auto-generated rainbow animation with tech blue gradient
+          # Original: rgb(77,25,25) → rgb(77,77,25) → rgb(25,77,25) → rgb(25,77,77) → rgb(25,25,77) → rgb(77,25,77)
+          # Tech Blue: rgb(22,27,34) → rgb(30,58,138) → rgb(37,99,235) → rgb(59,130,246) → rgb(6,182,212)
+          
+          # Light variations for animation (3D cube faces need different shades)
+          sed -i 's/rgb(77, 25, 25)/rgb(22, 27, 34)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(77, 77, 25)/rgb(30, 58, 138)/g' profile-3d-contrib/profile-night-rainbow.svg  
+          sed -i 's/rgb(25, 77, 25)/rgb(37, 99, 235)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(25, 77, 77)/rgb(59, 130, 246)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(25, 25, 77)/rgb(6, 182, 212)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(77, 25, 77)/rgb(22, 27, 34)/g' profile-3d-contrib/profile-night-rainbow.svg
+          
+          # Darker shades for cube shadows
+          sed -i 's/rgb(64, 21, 21)/rgb(18, 22, 28)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(64, 64, 21)/rgb(25, 48, 115)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(21, 64, 21)/rgb(31, 83, 195)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(21, 64, 64)/rgb(49, 108, 205)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(21, 21, 64)/rgb(5, 151, 177)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(64, 21, 64)/rgb(18, 22, 28)/g' profile-3d-contrib/profile-night-rainbow.svg
+          
+          # Even darker shades
+          sed -i 's/rgb(54, 18, 18)/rgb(15, 18, 23)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(54, 54, 18)/rgb(21, 40, 96)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(18, 54, 18)/rgb(26, 69, 163)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(18, 54, 54)/rgb(41, 90, 170)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(18, 18, 54)/rgb(4, 126, 148)/g' profile-3d-contrib/profile-night-rainbow.svg
+          sed -i 's/rgb(54, 18, 54)/rgb(15, 18, 23)/g' profile-3d-contrib/profile-night-rainbow.svg
+
       - name: Commit & Push
         run: |
           git config --global user.email "ronglexie@gmail.com"
