@@ -43,6 +43,13 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
+      - name: Fix SVG background colors
+        run: |
+          # Replace all SVG background colors with our tech blue theme
+          find profile-3d-contrib -name "*.svg" -type f -exec sed -i 's/fill="#ffffff"/fill="#0D1117"/g' {} \;
+          find profile-3d-contrib -name "*.svg" -type f -exec sed -i 's/fill="#00000f"/fill="#0D1117"/g' {} \;
+          find profile-3d-contrib -name "*.svg" -type f -exec sed -i 's/fill="#0d1117"/fill="#0D1117"/g' {} \;
+
       - name: Commit & Push
         run: |
           git config --global user.email "ronglexie@gmail.com"
