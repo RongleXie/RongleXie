@@ -1,24 +1,24 @@
 <!-- Banner + Badges -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FE428E,50:FF6F61,100:9B4F96&height=160&section=header&text=RongleXie&fontSize=52&fontAlignY=40&animation=fadeIn&fontColor=white&desc=Full%20Stack%20Developer%20%7C%20ChengDu&descAlignY=62&descSize=16" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,30:1E3A8A,60:3B82F6,100:06B6D4&height=160&section=header&text=RongleXie&fontSize=52&fontAlignY=40&animation=fadeIn&fontColor=ffffff&desc=Full%20Stack%20%7C%20AI%20Engineering%20%7C%20Cloud%20Native&descAlignY=62&descSize=16" width="100%" />
   
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2000&pause=500&color=FE428E&center=true&vCenter=true&width=600&lines=Java+%C2%B7+Go+%C2%B7+Vue+%C2%B7+TypeScript;Cloud+Native+%C2%B7+AI+Engineering;Open+Source+Enthusiast" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2000&pause=500&color=3B82F6&center=true&vCenter=true&width=600&lines=Java+%C2%B7+Go+%C2%B7+Vue+%C2%B7+TypeScript;AI+Agents+%C2%B7+LLM+%C2%B7+RAG;Docker+%C2%B7+K8s+%C2%B7+Cloud+Native" />
   
   <br/><br/>
   
   <!-- Social Badges -->
-  <a href="https://github.com/RongleXie"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://www.ronglexie.top"><img src="https://img.shields.io/badge/Blog-4A90E2?style=for-the-badge&logo=blogger&logoColor=white"/></a>
-  <a href="mailto:ronglexie@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+  <a href="https://github.com/RongleXie"><img src="https://img.shields.io/badge/GitHub-0D1117?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="https://www.ronglexie.top"><img src="https://img.shields.io/badge/Blog-3B82F6?style=for-the-badge&logo=blogger&logoColor=white"/></a>
+  <a href="mailto:ronglexie@gmail.com"><img src="https://img.shields.io/badge/Email-1E3A8A?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   
   <br/><br/>
   
   <!-- Stats Badges -->
-  <img src="https://img.shields.io/badge/⭐_Stars-6.8k+-FFD700?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/📦_Repos-113-007EC6?style=for-the-badge&logo=github"/>
-  <img src="https://img.shields.io/badge/👥_Followers-254-239120?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/💻_Commits-825+-E4682D?style=for-the-badge&logo=git"/>
-  <img src="https://komarev.com/ghpvc/?username=RongleXie&color=FE428E&style=for-the-badge&label=Views"/>
+  <img src="https://img.shields.io/badge/⭐_Stars-6.8k+-3B82F6?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/📦_Repos-113-0D1117?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/badge/👥_Followers-254-1E3A8A?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/💻_Commits-825+-06B6D4?style=for-the-badge&logo=git"/>
+  <img src="https://komarev.com/ghpvc/?username=RongleXie&color=3B82F6&style=for-the-badge&label=Views"/>
 </div>
 
 ---
