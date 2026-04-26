@@ -37,7 +37,7 @@
 
 | :star: Stars | :package: Repos | :busts_in_silhouette: Followers | :computer: Commits |
 |:-------:|:-------:|:------------:|:----------:|
-| **6.8k+** | **113** | **254** | **800+** |
+| **6.8k+** | **113** | **254** | **825+** |
 
 </div>
 
