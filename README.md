@@ -14,11 +14,11 @@
   <br/><br/>
   
   <!-- Stats Badges -->
-  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/stars.svg"/>
-  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/repos.svg"/>
-  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/followers.svg"/>
-  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/commits.svg"/>
-  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/views.svg"/>
+  <img src="https://img.shields.io/github/stars/RongleXie?affiliations=OWNER&style=for-the-badge&color=3B82F6&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/📦_Repos-114-0D1117?style=for-the-badge&logo=github"/>
+  <img src="https://img.shields.io/github/followers/RongleXie?label=Followers&style=for-the-badge&logo=github&labelColor=1E3A8A"/>
+  <img src="https://img.shields.io/badge/💻_Commits-865+-06B6D4?style=for-the-badge&logo=git"/>
+  <img src="https://komarev.com/ghpvc/?username=RongleXie&color=3B82F6&style=for-the-badge&label=Views"/>
 </div>
 
 ---
