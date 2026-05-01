@@ -1,0 +1,5 @@
+# Oh My Claude Code - runtime state
+.omc/state/
+
+# Claude Code - local settings
+.claude/settings.local.json
