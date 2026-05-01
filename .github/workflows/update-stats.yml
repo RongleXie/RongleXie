@@ -95,6 +95,7 @@ jobs:
             echo "::notice::No changes to commit"
           else
             git commit -m "chore: update stats badges"
+            git pull --rebase origin main
             git push
             echo "::notice::Successfully updated stats"
           fi

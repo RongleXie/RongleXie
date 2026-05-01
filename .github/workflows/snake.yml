@@ -33,4 +33,5 @@ jobs:
           git config --global user.name "RongleXie"
           git add snake/
           git commit -m "chore: update snake contribution grid" || echo "No changes"
+          git pull --rebase origin main
           git push
