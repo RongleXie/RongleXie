@@ -14,11 +14,11 @@
   <br/><br/>
   
   <!-- Stats Badges -->
-  <img src="https://img.shields.io/github/stars/RongleXie?affiliations=OWNER&style=for-the-badge&color=3B82F6&labelColor=0D1117"/>
-  <img src="https://img.shields.io/badge/📦_Repos-114-0D1117?style=for-the-badge&logo=github"/>
-  <img src="https://img.shields.io/github/followers/RongleXie?label=Followers&style=for-the-badge&logo=github&labelColor=1E3A8A"/>
-  <img src="https://img.shields.io/badge/💻_Commits-858+-06B6D4?style=for-the-badge&logo=git"/>
-  <img src="https://komarev.com/ghpvc/?username=RongleXie&color=3B82F6&style=for-the-badge&label=Views"/>
+  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/stars.svg"/>
+  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/repos.svg"/>
+  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/followers.svg"/>
+  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/commits.svg"/>
+  <img src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/views.svg"/>
 </div>
 
 ---
@@ -73,9 +73,9 @@
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/RongleXie/RongleXie/output/github-contribution-grid-snake-dark.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/main/snake/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RongleXie/RongleXie/main/snake/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/RongleXie/RongleXie/main/snake/github-contribution-grid-snake-dark.svg" width="100%">
 </picture>
 </div>
 
