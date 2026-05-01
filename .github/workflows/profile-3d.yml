@@ -84,4 +84,5 @@ jobs:
           git config --global user.name "RongleXie"
           git add -f profile-3d-contrib/
           git commit -m "chore: update 3d contribution graph" || echo "No changes"
+          git pull --rebase origin main
           git push
