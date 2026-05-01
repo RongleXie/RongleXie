@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
 
@@ -64,8 +64,10 @@ jobs:
 
       - name: Update README.md
         run: |
-          sed -i -E "s/\|\s*\*\*[0-9.]+k?\+?\*\*\s*\|\s*\*\*[0-9]+\*\*\s*\|\s*\*\*[0-9]+\*\*\s*\|\s*\*\*[0-9.]+k?\+?\*\*\s*\|/| **${{ env.STARS_FORMATTED }}** | **${{ env.REPOS }}** | **${{ env.FOLLOWERS }}** | **${{ env.COMMITS_FORMATTED }}** |/" README.md
-          sed -i -E "s/badge\/Repos-[0-9]+-blue/badge\/Repos-${{ env.REPOS }}-blue/" README.md
+          # Update Shields.io badge URLs in <img> tags
+          sed -i -E "s|badge/📦_Repos-[0-9]+-0D1117|badge/📦_Repos-${{ env.REPOS }}-0D1117|g" README.md
+          sed -i -E "s|badge/👥_Followers-[0-9]+-1E3A8A|badge/👥_Followers-${{ env.FOLLOWERS }}-1E3A8A|g" README.md
+          sed -i -E "s|badge/💻_Commits-[0-9.k+]+-06B6D4|badge/💻_Commits-${{ env.COMMITS_FORMATTED }}-06B6D4|g" README.md
 
           echo "::group::README Changes"
           git diff README.md || echo "No changes made"
