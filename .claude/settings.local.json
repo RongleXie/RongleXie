@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(git -C . log --all --format=\"%H%n%an <%ae>%n%B%n---END---\")",
-      "Bash(git *)",
-      "Bash(gh api *)"
-    ]
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"gh search commits --repo=RongleXie/RongleXie --limit 50 2>/dev/null\",\"description\":\"Search for old commits using gh search\"}",
-  "error": "Exit code 1",
-  "timestamp": "2026-04-26T07:33:02.618Z",
-  "retry_count": 1
-}
