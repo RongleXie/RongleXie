@@ -59,12 +59,9 @@ jobs:
 
       - name: Update README.md
         run: |
-          # Replace badge src with live Shields.io URLs
-          sed -i "s|https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/stars.svg|https://img.shields.io/github/stars/RongleXie?affiliations=OWNER\&style=for-the-badge\&color=3B82F6\&labelColor=0D1117|g" README.md
-          sed -i "s|https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/repos.svg|https://img.shields.io/badge/📦_Repos-${{ env.REPOS }}-0D1117?style=for-the-badge\&logo=github|g" README.md
-          sed -i "s|https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/followers.svg|https://img.shields.io/github/followers/RongleXie?label=Followers\&style=for-the-badge\&logo=github\&labelColor=1E3A8A|g" README.md
-          sed -i "s|https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/commits.svg|https://img.shields.io/badge/💻_Commits-${{ env.COMMITS_FORMATTED }}-06B6D4?style=for-the-badge\&logo=git|g" README.md
-          sed -i "s|https://raw.githubusercontent.com/RongleXie/RongleXie/main/stats/views.svg|https://komarev.com/ghpvc/?username=RongleXie\&color=3B82F6\&style=for-the-badge\&label=Views|g" README.md
+          # Update hardcoded repos and commits badges with live data
+          sed -i "s|/badge/📦_Repos-[0-9k+.]*-|/badge/📦_Repos-${{ env.REPOS }}-|" README.md
+          sed -i "s|/badge/💻_Commits-[0-9k+.]*-|/badge/💻_Commits-${{ env.COMMITS_FORMATTED }}-|" README.md
 
           echo "::group::README Changes"
           git diff README.md || echo "No changes made"
