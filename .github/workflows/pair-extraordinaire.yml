@@ -1,0 +1,74 @@
+name: Pair Extraordinaire Achievement
+
+on:
+  workflow_dispatch:
+    inputs:
+      coauthor_name:
+        description: 'Co-author GitHub username'
+        required: true
+      coauthor_email:
+        description: 'Co-author primary email'
+        required: true
+      count:
+        description: 'Number of co-authored commits (default: 2 for bronze)'
+        required: false
+        default: '2'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  pair-extraordinaire:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Generate co-authored commits
+        run: |
+          PRIMARY_NAME="${{ github.actor }}"
+          PRIMARY_EMAIL="${{ github.actor }}@users.noreply.github.com"
+          COAUTHOR_NAME="${{ inputs.coauthor_name }}"
+          COAUTHOR_EMAIL="${{ inputs.coauthor_email }}"
+          COUNT="${{ inputs.count }}"
+
+          for i in $(seq 1 $COUNT); do
+            BRANCH="pair-contrib-$i-$(date +%s)"
+            git checkout -b $BRANCH
+
+            # Make a small change
+            echo "# Pair Extraordinaire Contribution $i" >> .pair-contrib.md
+            echo "Created at $(date)" >> .pair-contrib.md
+
+            git add .pair-contrib.md
+            git commit -m "feat: pair contribution $i" \
+              --author="$PRIMARY_NAME <$PRIMARY_EMAIL>" \
+              -m "Co-authored-by: $COAUTHOR_NAME <$COAUTHOR_EMAIL>"
+
+            git push origin $BRANCH
+
+            # Create and merge PR
+            PR_URL=$(gh pr create --title "Pair contribution $i" \
+              --body "Automated co-authored commit for Pair Extraordinaire achievement." \
+              --head $BRANCH --base main)
+
+            gh pr merge $PR_URL --squash --delete-branch
+
+            echo "Created and merged PR #$i: $PR_URL"
+          done
+
+          # Cleanup
+          rm -f .pair-contrib.md
+          git checkout main
+          git pull origin main
+          rm -f .pair-contrib.md
+          git add -A
+          git commit -m "chore: cleanup pair contrib files" || true
+          git push origin main || true
+
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
