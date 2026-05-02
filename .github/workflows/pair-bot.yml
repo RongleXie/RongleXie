@@ -35,6 +35,10 @@ jobs:
           git config user.email "$PRIMARY_EMAIL"
 
           for i in $(seq 1 $COUNT); do
+            # Sync with main before each iteration
+            git checkout main
+            git pull origin main
+
             BRANCH="pair-bot-$i-$(date +%s%N)"
             git checkout -b $BRANCH
 
