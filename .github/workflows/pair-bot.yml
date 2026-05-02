@@ -1,0 +1,74 @@
+name: Pair Extraordinaire with Actions Bot
+
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: 'Number of co-authored commits (default: 48 for gold)'
+        required: false
+        default: '48'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  pair-extraordinaire:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Create co-authored commits with GitHub Actions Bot
+        run: |
+          PRIMARY_NAME="${{ github.actor }}"
+          PRIMARY_EMAIL="${{ github.actor }}@users.noreply.github.com"
+          # Use GitHub Actions bot as co-author
+          COAUTHOR_NAME="github-actions[bot]"
+          COAUTHOR_EMAIL="41898282+github-actions[bot]@users.noreply.github.com"
+          COUNT="${{ inputs.count }}"
+
+          git config user.name "$PRIMARY_NAME"
+          git config user.email "$PRIMARY_EMAIL"
+
+          for i in $(seq 1 $COUNT); do
+            BRANCH="pair-bot-$i-$(date +%s%N)"
+            git checkout -b $BRANCH
+
+            # Make a unique change
+            echo "Bot contribution #$i at $(date -Iseconds)" >> .pair-bot-log.md
+            git add .pair-bot-log.md
+
+            # Commit with bot as co-author
+            git commit -m "feat: automated pair contribution #$i" \
+              -m "Co-authored-by: $COAUTHOR_NAME <$COAUTHOR_EMAIL>"
+
+            git push origin $BRANCH
+
+            # Create PR using gh CLI (authenticated as you)
+            PR_URL=$(gh pr create --title "Pair bot contribution #$i" \
+              --body "Automated co-authored commit with GitHub Actions bot." \
+              --base main --head $BRANCH)
+
+            # Squash merge to preserve co-author
+            gh pr merge $PR_URL --squash --delete-branch=false
+
+            # Delete branch after merge
+            git push origin --delete $BRANCH || true
+
+            echo "✓ Completed #$i: $PR_URL"
+          done
+
+          # Cleanup log file
+          git checkout main
+          git pull origin main
+          rm -f .pair-bot-log.md
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: cleanup pair bot logs"
+          git push origin main || true
+
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
